@@ -1,0 +1,3009 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://localhost/phpmyadmin/index.php?route=/database/designer&db=sis -->
+<html lang="en" dir="ltr" style="z-index: 1;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  
+  <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/show-hint.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/lint.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/theme.css">
+  <title>localhost / 127.0.0.1 / sis | phpMyAdmin 5.2.0</title>
+    <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery.min.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery-migrate.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/sprintf.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/ajax.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/keyhandler.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery-ui.min.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/name-conflict-fixes.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/bootstrap.bundle.min.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/js.cookie.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery.validate.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery-ui-timepicker-addon.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery.debounce-1.0.6.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/menu_resizer.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/cross_framing_protection.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/messages.php"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/config.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/doclinks.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/functions.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/navigation.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/indexes.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/common.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/page_settings.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/jquery.uitablefilter.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/change.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/gis_data_editor.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/multi_column_sort.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/makegrid.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/sql.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/codemirror.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/sql.js(1).download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/runmode.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/show-hint.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/sql-hint.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/lint.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/sql-lint.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/tracekit.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/error_report.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/drag_drop_import.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/shortcuts_handler.js.download"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/console.js.download"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"en",server:"1",table:"attendance",db:"sis",token:"5e465d305d6a2e372c7e6326755b2c48",text_dir:"ltr",LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",version:"5.2.0",auth_type:"config",user:"root"});
+var firstDayOfCalendar = '0';
+var themeImagePath = '.\/themes\/pmahomme\/img\/';
+var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
+var maxInputVars = 1000;
+
+if ($.datepicker) {
+  $.datepicker.regional[''].closeText = 'Done';
+  $.datepicker.regional[''].prevText = 'Prev';
+  $.datepicker.regional[''].nextText = 'Next';
+  $.datepicker.regional[''].currentText = 'Today';
+  $.datepicker.regional[''].monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  $.datepicker.regional[''].monthNamesShort = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  $.datepicker.regional[''].dayNames = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
+  $.datepicker.regional[''].dayNamesShort = [
+    'Sun',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat',
+  ];
+  $.datepicker.regional[''].dayNamesMin = [
+    'Su',
+    'Mo',
+    'Tu',
+    'We',
+    'Th',
+    'Fr',
+    'Sa',
+  ];
+  $.datepicker.regional[''].weekHeader = 'Wk';
+  $.datepicker.regional[''].showMonthAfterYear = false;
+  $.datepicker.regional[''].yearSuffix = '';
+  $.extend($.datepicker._defaults, $.datepicker.regional['']);
+}
+
+if ($.timepicker) {
+  $.timepicker.regional[''].timeText = 'Time';
+  $.timepicker.regional[''].hourText = 'Hour';
+  $.timepicker.regional[''].minuteText = 'Minute';
+  $.timepicker.regional[''].secondText = 'Second';
+  $.extend($.timepicker._defaults, $.timepicker.regional['']);
+}
+
+function extendingValidatorMessages () {
+  $.extend($.validator.messages, {
+    required: 'This\u0020field\u0020is\u0020required',
+    remote: 'Please\u0020fix\u0020this\u0020field',
+    email: 'Please\u0020enter\u0020a\u0020valid\u0020email\u0020address',
+    url: 'Please\u0020enter\u0020a\u0020valid\u0020URL',
+    date: 'Please\u0020enter\u0020a\u0020valid\u0020date',
+    dateISO: 'Please\u0020enter\u0020a\u0020valid\u0020date\u0020\u0028\u0020ISO\u0020\u0029',
+    number: 'Please\u0020enter\u0020a\u0020valid\u0020number',
+    creditcard: 'Please\u0020enter\u0020a\u0020valid\u0020credit\u0020card\u0020number',
+    digits: 'Please\u0020enter\u0020only\u0020digits',
+    equalTo: 'Please\u0020enter\u0020the\u0020same\u0020value\u0020again',
+    maxlength: $.validator.format('Please\u0020enter\u0020no\u0020more\u0020than\u0020\u007B0\u007D\u0020characters'),
+    minlength: $.validator.format('Please\u0020enter\u0020at\u0020least\u0020\u007B0\u007D\u0020characters'),
+    rangelength: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020between\u0020\u007B0\u007D\u0020and\u0020\u007B1\u007D\u0020characters\u0020long'),
+    range: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020between\u0020\u007B0\u007D\u0020and\u0020\u007B1\u007D'),
+    max: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020less\u0020than\u0020or\u0020equal\u0020to\u0020\u007B0\u007D'),
+    min: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020greater\u0020than\u0020or\u0020equal\u0020to\u0020\u007B0\u007D'),
+    validationFunctionForDateTime: $.validator.format('Please\u0020enter\u0020a\u0020valid\u0020date\u0020or\u0020time'),
+    validationFunctionForHex: $.validator.format('Please\u0020enter\u0020a\u0020valid\u0020HEX\u0020input'),
+    validationFunctionForMd5: $.validator.format('This\u0020column\u0020can\u0020not\u0020contain\u0020a\u002032\u0020chars\u0020value'),
+    validationFunctionForAesDesEncrypt: $.validator.format('These\u0020functions\u0020are\u0020meant\u0020to\u0020return\u0020a\u0020binary\u0020result\u003B\u0020to\u0020avoid\u0020inconsistent\u0020results\u0020you\u0020should\u0020store\u0020it\u0020in\u0020a\u0020BINARY,\u0020VARBINARY,\u0020or\u0020BLOB\u0020column.')
+  });
+}
+
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.js', 0)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('name-conflict-fixes.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.validate.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.6.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('cross_framing_protection.js', 0)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('vendor/jquery/jquery.uitablefilter.js', 0)
+  .add('table/change.js', 1)
+  .add('gis_data_editor.js', 1)
+  .add('multi_column_sort.js', 1)
+  .add('makegrid.js', 1)
+  .add('sql.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+        AJAX.fireOnload('name-conflict-fixes.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+      AJAX.fireOnload('vendor/js.cookie.js');
+            AJAX.fireOnload('menu_resizer.js');
+          AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+        AJAX.fireOnload('table/change.js');
+      AJAX.fireOnload('gis_data_editor.js');
+      AJAX.fireOnload('multi_column_sort.js');
+      AJAX.fireOnload('makegrid.js');
+      AJAX.fireOnload('sql.js');
+                    AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+      AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+<script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/structure.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/database.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/objects.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/page.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/history.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/move.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/init.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/routines.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/additional-methods.js.download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/structure.js(1).download"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/triggers.js.download"></script></head>
+<body style="margin-bottom: 21.795px; margin-left: 240px; padding-top: 59.5801px; cursor: inherit; z-index: 1;">
+    <div id="pma_navigation" class="d-print-none" data-config-navigation-width="240" style="width: 240px;">
+    <div id="pma_navigation_resizer" style="left: 240px; width: 3px;"></div>
+    <div id="pma_navigation_collapser" title="Hide panel" style="left: 240px;">←</div>
+    <div id="pma_navigation_content">
+      <div id="pma_navigation_header">
+
+                  <div id="pmalogo">
+                          <a href="http://localhost/phpmyadmin/index.php">
+                                      <img id="imgpmalogo" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/logo_left.png" alt="phpMyAdmin">
+                                      </a>
+                      </div>
+        
+        <div id="navipanellinks">
+          <a href="http://localhost/phpmyadmin/index.php?route=/" title="Home"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Home" alt="Home" class="icon ic_b_home"></a>
+
+                      <a class="logout disableAjax" href="http://localhost/phpmyadmin/index.php?route=/logout" title="Empty session data"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Empty session data" alt="Empty session data" class="icon ic_s_loggoff"></a>
+          
+          <a href="http://localhost/phpmyadmin/doc/html/index.html" title="phpMyAdmin documentation" target="_blank" rel="noopener noreferrer"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="phpMyAdmin documentation" alt="phpMyAdmin documentation" class="icon ic_b_docs"></a>
+
+          <a href="http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F" title="MariaDB Documentation" target="_blank" rel="noopener noreferrer"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="MariaDB Documentation" alt="MariaDB Documentation" class="icon ic_b_sqlhelp"></a>
+
+          <a id="pma_navigation_settings_icon" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" title="Navigation panel settings"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Navigation panel settings" alt="Navigation panel settings" class="icon ic_s_cog"></a>
+
+          <a id="pma_navigation_reload" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" title="Reload navigation panel"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Reload navigation panel" alt="Reload navigation panel" class="icon ic_s_reload"></a>
+        </div>
+
+        
+        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Loading…" alt="Loading…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber">
+      </div>
+      <div id="pma_navigation_tree" class="list_container synced highlight autoexpand" style="height: 557.72px;">
+  <div class="pma_quick_warp">
+    <div class="drop_list"><button title="Recent tables" class="drop_button btn">Recent</button><ul id="pma_recent_list"><li class="warp_link">
+  <a href="http://localhost/phpmyadmin/index.php?route=/table/recent-favorite&amp;db=sis&amp;table=teacher_details">
+    `sis`.`teacher_details`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="http://localhost/phpmyadmin/index.php?route=/table/recent-favorite&amp;db=sis&amp;table=2021">
+    `sis`.`2021`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="http://localhost/phpmyadmin/index.php?route=/table/recent-favorite&amp;db=sis&amp;table=attendance">
+    `sis`.`attendance`
+  </a>
+</li>
+<li class="warp_link">
+  <a href="http://localhost/phpmyadmin/index.php?route=/table/recent-favorite&amp;db=sis&amp;table=admin">
+    `sis`.`admin`
+  </a>
+</li>
+</ul></div>    <div class="drop_list"><button title="Favorite tables" class="drop_button btn">Favorites</button><ul id="pma_favorite_list"><li class="warp_link">
+            There are no favorite tables.    </li>
+</ul></div>    <div class="clearfloat"></div>
+</div>
+
+
+<div class="clearfloat"></div>
+
+<ul>
+  
+  <!-- CONTROLS START -->
+<li id="navigation_controls_outer">
+    <div id="navigation_controls">
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="pma_navigation_collapse" title="Collapse all"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Collapse all" alt="Collapse all" class="icon ic_s_collapseall"></a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="pma_navigation_sync" title="Unlink from main panel"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Unlink from main panel" alt="Unlink from main panel" class="icon ic_s_link"></a>
+    </div>
+</li>
+<!-- CONTROLS ENDS -->
+
+</ul>
+
+
+
+<div id="pma_navigation_tree_content" style="height: 502.466px;">
+  <ul>
+      <li class="first new_database italics">
+    <div class="block">
+      <i class="first"></i>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/server/databases"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="New" alt="New" class="icon ic_b_newdb"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/server/databases" title="New">New</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.Y29udGFjdGRi" data-vpath="cm9vdA==.Y29udGFjdGRi" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=contactdb"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=contactdb" title="Structure">contactdb</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.aWRpc2N1c3M=" data-vpath="cm9vdA==.aWRpc2N1c3M=" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=idiscuss"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=idiscuss" title="Structure">idiscuss</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-vpath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=information_schema"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=information_schema" title="Structure">information_schema</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.bXlzcWw=" data-vpath="cm9vdA==.bXlzcWw=" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=mysql"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=mysql" title="Structure">mysql</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.bmFtZXNkZQ==" data-vpath="cm9vdA==.bmFtZXNkZQ==" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=namesde"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=namesde" title="Structure">namesde</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.bm90ZXM=" data-vpath="cm9vdA==.bm90ZXM=" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=notes"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=notes" title="Structure">notes</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-vpath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=performance_schema"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=performance_schema" title="Structure">performance_schema</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=phpmyadmin"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=phpmyadmin" title="Structure">phpmyadmin</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database selected">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander loaded" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz" data-vpath="cm9vdA==.c2lz" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="" alt="" class="icon ic_b_minus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=sis"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=sis" title="Structure">sis</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+  <div class="list_container">
+    <ul>
+  <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+
+  <li class="new_table italics new_table italics">
+    <div class="block">
+      <i></i>
+              <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/create&amp;db=sis"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="New" alt="New" class="icon ic_b_table_add"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/table/create&amp;db=sis" title="New">New</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz.dGFibGVz.YWRtaW4=" data-vpath="cm9vdA==.c2lz.VGFibGVz.YWRtaW4=" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=sis&amp;table=admin"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=sis&amp;table=admin" title="Browse">admin</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz.dGFibGVz.YXR0ZW5kYW5jZQ==" data-vpath="cm9vdA==.c2lz.VGFibGVz.YXR0ZW5kYW5jZQ==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=sis&amp;table=attendance"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=sis&amp;table=attendance" title="Browse">attendance</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz.dGFibGVz.c3RkX2RldGFpbHM=" data-vpath="cm9vdA==.c2lz.VGFibGVz.c3RkX2RldGFpbHM=" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=sis&amp;table=std_details"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=sis&amp;table=std_details" title="Browse">std_details</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz.dGFibGVz.c3R1ZGVudA==" data-vpath="cm9vdA==.c2lz.VGFibGVz.c3R1ZGVudA==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=sis&amp;table=student"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=sis&amp;table=student" title="Browse">student</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz.dGFibGVz.dGVhY2hlcg==" data-vpath="cm9vdA==.c2lz.VGFibGVz.dGVhY2hlcg==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=sis&amp;table=teacher"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=sis&amp;table=teacher" title="Browse">teacher</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table last nav_node_table">
+    <div class="block">
+      <i></i>
+              
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c2lz.dGFibGVz.dGVhY2hlcl9kZXRhaWxz" data-vpath="cm9vdA==.c2lz.VGFibGVz.dGVhY2hlcl9kZXRhaWxz" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=sis&amp;table=teacher_details"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=sis&amp;table=teacher_details" title="Browse">teacher_details</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+
+
+
+    </ul>
+  </div>
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.c21z" data-vpath="cm9vdA==.c21z" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=sms"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=sms" title="Structure">sms</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.dGVzdA==" data-vpath="cm9vdA==.dGVzdA==" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=test"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=test" title="Structure">test</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.dG91cmRi" data-vpath="cm9vdA==.dG91cmRi" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=tourdb"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=tourdb" title="Structure">tourdb</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="last database">
+    <div class="block">
+      <i></i>
+              
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.dXNlcnM=" data-vpath="cm9vdA==.dXNlcnM=" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=users"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=users" title="Structure">users</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+
+  </ul>
+</div>
+
+
+</div>
+
+      <div id="pma_navi_settings_container">
+                  
+              </div>
+    </div>
+
+          <div class="pma_drop_handler">
+        Drop files here      </div>
+      <div class="pma_sql_import_status">
+        <h2>
+          SQL upload          ( <span class="pma_import_count">0</span> )
+          <span class="close">x</span>
+          <span class="minimize">-</span>
+        </h2>
+        <div></div>
+      </div>
+      </div>
+  
+
+
+  
+  <div id="prefs_autoload" class="alert alert-primary d-print-none hide" role="alert">
+    <form action="http://localhost/phpmyadmin/index.php?route=/preferences/manage" method="post" class="disableAjax">
+        <input type="hidden" name="token" value="5e465d305d6a2e372c7e6326755b2c48">
+        <input type="hidden" name="json" value="">
+        <input type="hidden" name="submit_import" value="1">
+        <input type="hidden" name="return_url" value="index.php?route=%2Fsql&amp;pos=0&amp;db=sis&amp;table=attendance">
+        Your browser has phpMyAdmin configuration for this domain. Would you like to import it for current session?        <br>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#yes">Yes</a>
+        / <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#no">No</a>
+        / <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#delete">Delete settings</a>
+    </form>
+</div>
+
+
+  
+      
+  
+      <div id="floating_menubar" class="d-print-none" style="margin-left: 242.979px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;">
+<nav id="server-breadcrumb" aria-label="breadcrumb">
+  <ol class="breadcrumb breadcrumb-navbar">
+    <li class="breadcrumb-item">
+      <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="" alt="" class="icon ic_s_host">
+      <a href="http://localhost/phpmyadmin/index.php?route=/" data-raw-text="127.0.0.1" draggable="false">
+        Server:        127.0.0.1
+      </a>
+    </li>
+
+          <li class="breadcrumb-item">
+        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="" alt="" class="icon ic_s_db">
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=sis" data-raw-text="sis" draggable="false">
+          Database:          sis
+        </a>
+      </li>
+
+            </ol>
+</nav>
+<div id="topmenucontainer" class="menucontainer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation" aria-controls="navbarNav" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="width: auto; overflow: visible;">
+      <ul id="topmenu" class="navbar-nav">
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/search&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Search" alt="Search" class="icon ic_b_search">&nbsp;Search
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/multi-table-query&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Query" alt="Query" class="icon ic_s_db">&nbsp;Query
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/export&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Export" alt="Export" class="icon ic_b_export">&nbsp;Export
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/import&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Import" alt="Import" class="icon ic_b_import">&nbsp;Import
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Operations" alt="Operations" class="icon ic_b_tblops">&nbsp;Operations
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/server/privileges&amp;db=sis&amp;checkprivsdb=sis&amp;viewing_mode=db">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Privileges" alt="Privileges" class="icon ic_s_rights">&nbsp;Privileges
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/routines&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Routines" alt="Routines" class="icon ic_b_routines">&nbsp;Routines
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/events&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Events" alt="Events" class="icon ic_b_events">&nbsp;Events
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/triggers&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Triggers" alt="Triggers" class="icon ic_b_triggers">&nbsp;Triggers
+                          </a>
+          </li>
+                  <li class="nav-item active">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis">
+              <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Designer" alt="Designer" class="icon ic_b_relations">&nbsp;Designer
+                              <span class="visually-hidden">(current)</span>
+                          </a>
+          </li>
+              <li class="nav-item dropdown d-none" style=""><a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img alt="" title="" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" class="icon ic_b_more">More</a><ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"></ul></li></ul>
+    </div>
+  </nav>
+</div>
+</div>
+
+
+
+    <span id="page_nav_icons" class="d-print-none">
+      <span id="lock_page_icon"></span>
+      <span id="page_settings_icon" style="display: none;">
+        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Page-related settings" alt="Page-related settings" class="icon ic_s_cog">
+      </span>
+      <a id="goto_pagetop" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Click on the bar to scroll to top of page" alt="Click on the bar to scroll to top of page" class="icon ic_s_top"></a>
+    </span>
+  
+  <div id="pma_console_container" class="d-print-none">
+    <div id="pma_console" style="margin-left: 242.986px;">
+                <div class="toolbar collapsed">
+                    <div class="switch_button console_switch">
+            <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="SQL Query Console" alt="SQL Query Console" class="icon ic_console">
+            <span>Console</span>
+        </div>
+                            <div class="button clear">
+            
+            <span>Clear</span>
+        </div>
+                            <div class="button history">
+            
+            <span>History</span>
+        </div>
+                            <div class="button options">
+            
+            <span>Options</span>
+        </div>
+                            <div class="">
+            
+            <span></span>
+        </div>
+                            <div class="button debug hide">
+            
+            <span>Debug SQL</span>
+        </div>
+            </div>
+                <div class="content" style="height: 98.2979px; margin-bottom: -98.294px; display: none;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0">
+                        Press Ctrl+Enter to execute query                    </span>
+                    <span class="hide" id="instructions-1">
+                        Press Enter to execute query                    </span>
+                </div>
+                            <div class="message collapsed binded successed" msgid="469548568572" targetdb="sis" targettable="2023"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:50:48 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:50:48</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">DROP</span> <span class="cm-keyword">TABLE</span> `2023`</div></div><div class="message collapsed binded select successed" msgid="636539765682" targetdb="sis" targettable="2021"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:50:56 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:50:56</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> <span class="cm-operator">*</span> <span class="cm-keyword">FROM</span> `2021`</div></div><div class="message collapsed binded successed" msgid="840317820293" targetdb="sis" targettable="2021"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:51:06 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:51:6</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">DROP</span> <span class="cm-keyword">TABLE</span> `2021`</div></div><div class="message collapsed binded successed" msgid="178802080907" targetdb="sis" targettable="std_attendance"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:51:15 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:51:15</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">DROP</span> <span class="cm-keyword">TABLE</span> `std_attendance`</div></div><div class="message collapsed binded successed" msgid="250289355587" targetdb="sis" targettable="student_attendance"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:51:28 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:51:28</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">DROP</span> <span class="cm-keyword">TABLE</span> `student_attendance`</div></div><div class="message collapsed binded select successed" msgid="988363868908" targetdb="sis" targettable="teacher_details"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:57:41 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:57:41</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> <span class="cm-operator">*</span> <span class="cm-keyword">FROM</span> `teacher_details`</div></div><div class="message collapsed binded successed" msgid="160912325543" targetdb="sis" targettable="teacher_details"><div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>sis</span>
+                    </span>
+                            <span class="text query_time" title="Tue Feb 28 2023 17:57:51 GMT+0530 (India Standard Time)">
+            Queried time
+                            : <span>17:57:51</span>
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">ALTER</span> <span class="cm-keyword">TABLE</span> `teacher_details` ADD PRIMARY KEY<span class="cm-bracket">(</span>`t_id`<span class="cm-bracket">)</span><span class="cm-punctuation">;</span></div></div></div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 15.9941px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -22px; border-right-width: 28px; min-height: 20px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 19.685px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 28px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="height: 48px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span>ascending</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span>descending</span>
+        </div>
+                            <div class="text">
+            
+            <span>Order:</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span>Debug SQL</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span>Count</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span>Execution order</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span>Time taken</span>
+        </div>
+                            <div class="text">
+            
+            <span>Order by:</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span>Group queries</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span>Ungroup queries</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 98.2979px;">
+                <div class="message welcome binded">Some error occurred while getting SQL debug info.</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates">
+                <div class="debug_query action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action dbg_show_trace">
+            Show trace
+                    </span>
+                            <span class="action dbg_hide_trace">
+            Hide trace
+                    </span>
+                            <span class="text count hide">
+            Count
+                    </span>
+                            <span class="text time">
+            Time taken
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Options</span>
+        </div>
+                            <div class="button default">
+            
+            <span>Set default</span>
+        </div>
+            </div>
+            <div class="content" style="height: 101.05px;">
+                <label>
+                    <input type="checkbox" name="always_expand">Always expand query messages                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="start_history">Show query history at start                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="current_query">Show current browsing query                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="enter_executes">
+                        Execute queries on Enter and insert new line with Shift+Enter. To make this permanent, view settings.                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dark_theme">Switch to dark theme                </label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates">
+                        <div class="query_actions">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="">
+            
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span></span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span></span>
+                    </span>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+
+
+  <div id="page_content" style="margin-left: 3px;"><script type="text/javascript">
+var designerConfig = {"db":"sis","scriptTables":{"j_tabs":{"sis.admin":1,"sis.attendance":1,"sis.std_details":1,"sis.student":1,"sis.teacher":1,"sis.teacher_details":1},"h_tabs":{"sis.admin":1,"sis.attendance":1,"sis.std_details":1,"sis.student":1,"sis.teacher":1,"sis.teacher_details":1}},"scriptContr":[{"Test":{"sis.attendance":{"student_id":["sis.std_details","std_id"]}}},{"student_ibfk_1":{"sis.student":{"std_id":["sis.std_details","std_id"]}}}],"server":1,"scriptDisplayField":{"admin":"admin_id","attendance":"student_name","std_details":"std_id","student":"std_id","teacher":"t_name","teacher_details":"t_id"},"displayPage":-1,"tablesEnabled":false};
+</script>
+
+    <div id="name-panel">
+        <span id="page_name">Untitled</span>
+        <span id="saved_state">*</span>
+    </div>
+<div class="designer_header side-menu" id="side_menu">
+    <a class="M_butt" id="key_Show_left_menu" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#">
+        <img title="Show/Hide tables list" alt="v" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/downarrow2_m.png" data-down="./themes/pmahomme/img/designer/downarrow2_m.png" data-up="./themes/pmahomme/img/designer/uparrow2_m.png">
+        <span class="hide hidable">
+            Show/Hide tables list        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="toggleFullscreen" class="M_butt">
+        <img title="View in fullscreen" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/viewInFullscreen.png" data-enter="./themes/pmahomme/img/designer/viewInFullscreen.png" data-exit="./themes/pmahomme/img/designer/exitFullscreen.png">
+        <span class="hide hidable" data-exit="Exit fullscreen" data-enter="View in fullscreen">
+            View in fullscreen        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="addOtherDbTables" class="M_butt">
+        <img title="Add tables from other databases" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/other_table.png">
+        <span class="hide hidable">
+            Add tables from other databases        </span>
+    </a>
+            <a id="newPage" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt">
+            <img title="New page" alt="" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/page_add.png">
+            <span class="hide hidable">
+                New page            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="editPage" class="M_butt ajax">
+            <img title="Open page" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/page_edit.png">
+            <span class="hide hidable">
+                Open page            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="savePos" class="M_butt">
+            <img title="Save page" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/save.png">
+            <span class="hide hidable">
+                Save page            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="SaveAs" class="M_butt ajax">
+            <img title="Save page as" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/save_as.png">
+            <span class="hide hidable">
+                Save page as            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="delPages" class="M_butt ajax">
+            <img title="Delete pages" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/page_delete.png">
+            <span class="hide hidable">
+                Delete pages            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="StartTableNew" class="M_butt">
+            <img title="Create table" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/table.png">
+            <span class="hide hidable">
+                Create table            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="rel_button">
+            <img title="Create relationship" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/relation.png">
+            <span class="hide hidable">
+                Create relationship            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="display_field_button">
+            <img title="Choose column to display" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/display_field.png">
+            <span class="hide hidable">
+                Choose column to display            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="reloadPage" class="M_butt">
+            <img title="Reload" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/reload.png">
+            <span class="hide hidable">
+                Reload            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/doc/html/faq.html#faq6-31" target="_blank" rel="noopener noreferrer" class="M_butt">
+            <img title="Help" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/help.png">
+            <span class="hide hidable">
+                Help            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="angular_direct_button">
+        <img title="Angular links / Direct links" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/ang_direct.png">
+        <span class="hide hidable">
+            Angular links / Direct links        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="grid_button">
+        <img title="Snap to grid" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/grid.png">
+        <span class="hide hidable">
+            Snap to grid        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="key_SB_all">
+        <img title="Small/Big All" alt="v" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/downarrow1.png" data-down="./themes/pmahomme/img/designer/downarrow1.png" data-right="./themes/pmahomme/img/designer/rightarrow1.png">
+        <span class="hide hidable">
+            Small/Big All        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="SmallTabInvert" class="M_butt">
+        <img title="Toggle small/big" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/bottom.png">
+        <span class="hide hidable">
+            Toggle small/big        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="relLineInvert" class="M_butt_Selected_down">
+        <img title="Toggle relationship lines" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/toggle_lines.png">
+        <span class="hide hidable">
+            Toggle relationship lines        </span>
+    </a>
+            <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" id="exportPages" class="M_butt">
+            <img title="Export schema" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/export.png">
+            <span class="hide hidable">
+                Export schema            </span>
+        </a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="key_Left_Right">
+        <img title="Move Menu" alt="&gt;" data-right="./themes/pmahomme/img/designer/2leftarrow_m.png" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/2rightarrow_m.png">
+        <span class="hide hidable">
+            Move Menu        </span>
+    </a>
+    <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" id="pin_Text">
+        <img title="Pin text" alt="&gt;" data-right="./themes/pmahomme/img/designer/anchor.png" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/anchor.png">
+        <span class="hide hidable">
+            Pin text        </span>
+    </a>
+</div>
+<div id="canvas_outer">
+    <form action="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis" id="container-form" method="post" name="form1">
+        <div id="osn_tab">
+            <canvas class="designer" id="canvas" width="1351" height="619" style="display: inline-block;"></canvas>
+        </div>
+        <div id="layer_menu" class="hide" style="top: -1000px;">
+            <div class="text-center">
+                <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" target="_self">
+                    <img title="Hide/Show all" alt="v" id="key_HS_all" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/downarrow1.png" data-down="./themes/pmahomme/img/designer/downarrow1.png" data-right="./themes/pmahomme/img/designer/rightarrow1.png">
+                </a>
+                <a href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#" class="M_butt" target="_self">
+                    <img alt="v" id="key_HS" title="Hide/Show tables with no relationship" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/downarrow2.png" data-down="./themes/pmahomme/img/designer/downarrow2.png" data-right="./themes/pmahomme/img/designer/rightarrow2.png">
+                </a>
+            </div>
+            <div id="id_scroll_tab" class="scroll_tab">
+                <table class="table table-sm ps-1"><tr>    <td title="Structure" width="1px" class="L_butt2_1">        <img alt="" db="sis" table_name="admin" class="scroll_tab_struct" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec.png">    </td>    <td width="1px">        <input class="scroll_tab_checkbox" title="Hide" id="check_vis_sis.admin" style="margin:0;" type="checkbox" value="sis.admin" checked="">    </td>    <td class="designer_Tabs" designer_url_table_name="sis.admin">sis.admin</td></tr><tr>    <td title="Structure" width="1px" class="L_butt2_1">        <img alt="" db="sis" table_name="attendance" class="scroll_tab_struct" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec.png">    </td>    <td width="1px">        <input class="scroll_tab_checkbox" title="Hide" id="check_vis_sis.attendance" style="margin:0;" type="checkbox" value="sis.attendance" checked="">    </td>    <td class="designer_Tabs" designer_url_table_name="sis.attendance">sis.attendance</td></tr><tr>    <td title="Structure" width="1px" class="L_butt2_1">        <img alt="" db="sis" table_name="std_details" class="scroll_tab_struct" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec.png">    </td>    <td width="1px">        <input class="scroll_tab_checkbox" title="Hide" id="check_vis_sis.std_details" style="margin:0;" type="checkbox" value="sis.std_details" checked="">    </td>    <td class="designer_Tabs" designer_url_table_name="sis.std_details">sis.std_details</td></tr><tr>    <td title="Structure" width="1px" class="L_butt2_1">        <img alt="" db="sis" table_name="student" class="scroll_tab_struct" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec.png">    </td>    <td width="1px">        <input class="scroll_tab_checkbox" title="Hide" id="check_vis_sis.student" style="margin:0;" type="checkbox" value="sis.student" checked="">    </td>    <td class="designer_Tabs" designer_url_table_name="sis.student">sis.student</td></tr><tr>    <td title="Structure" width="1px" class="L_butt2_1">        <img alt="" db="sis" table_name="teacher" class="scroll_tab_struct" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec.png">    </td>    <td width="1px">        <input class="scroll_tab_checkbox" title="Hide" id="check_vis_sis.teacher" style="margin:0;" type="checkbox" value="sis.teacher" checked="">    </td>    <td class="designer_Tabs" designer_url_table_name="sis.teacher">sis.teacher</td></tr><tr>    <td title="Structure" width="1px" class="L_butt2_1">        <img alt="" db="sis" table_name="teacher_details" class="scroll_tab_struct" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec.png">    </td>    <td width="1px">        <input class="scroll_tab_checkbox" title="Hide" id="check_vis_sis.teacher_details" style="margin:0;" type="checkbox" value="sis.teacher_details" checked="">    </td>    <td class="designer_Tabs" designer_url_table_name="sis.teacher_details">sis.teacher_details</td></tr></table>
+            </div>
+                        <div class="text-center">
+                Number of tables: <span id="tables_counter">6</span>
+            </div>
+            <div id="layer_menu_sizer">
+                  <img class="icon float-start" id="layer_menu_sizer_btn" data-right="./themes/pmahomme/img/designer/resizeright.png" src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/resize.png">
+            </div>
+        </div>
+                                            <input name="t_x[sis.admin]" type="hidden" id="t_x_sis.admin_">
+    <input name="t_y[sis.admin]" type="hidden" id="t_y_sis.admin_">
+    <input name="t_v[sis.admin]" type="hidden" id="t_v_sis.admin_">
+    <input name="t_h[sis.admin]" type="hidden" id="t_h_sis.admin_">
+    <table id="sis.admin" db_url="sis" table_name_url="admin" cellpadding="0" cellspacing="0" class="table table-sm table-striped table-hover w-auto designer_tab" style="position: absolute; left: 1096px; top: 59px; display: block; z-index: 1;" data-left="1096" data-top="59"> <!--"-->
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Show/hide columns" id="id_hide_tbody_sis.admin" table_name="sis.admin">v</td>
+                <td class="small_tab_pref small_tab_pref_1" db="sis" db_url="sis" table_name="admin" table_name_url="admin">
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec_small.png" title="See table structure">
+                </td>
+                <td id="id_zag_sis.admin" class="tab_zag" table_name="sis.admin" query_set="0">
+                    <span class="owner">sis</span>
+                    admin
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_sis.admin">
+                                                                                                                                                                                <tr id="id_tr_admin.admin_id" class="tab_field_3" click_field_param="admin,admin_id,1,sis">
+                                        <td width="10px" colspan="3" id="sis.admin.admin_id">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/FieldKey_small.png" alt="*">
+                            admin_id : varchar(15)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_admin.admin_password" class="tab_field" click_field_param="admin,admin_password,0,sis">
+                                        <td width="10px" colspan="3" id="sis.admin.admin_password">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            admin_password : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_admin.admin_name" class="tab_field" click_field_param="admin,admin_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.admin.admin_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            admin_name : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+                            <input name="t_x[sis.attendance]" type="hidden" id="t_x_sis.attendance_">
+    <input name="t_y[sis.attendance]" type="hidden" id="t_y_sis.attendance_">
+    <input name="t_v[sis.attendance]" type="hidden" id="t_v_sis.attendance_">
+    <input name="t_h[sis.attendance]" type="hidden" id="t_h_sis.attendance_">
+    <table id="sis.attendance" db_url="sis" table_name_url="attendance" cellpadding="0" cellspacing="0" class="table table-sm table-striped table-hover w-auto designer_tab" style="position: absolute; left: 501px; top: 256px; display: block; z-index: 1;"> <!--"-->
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Show/hide columns" id="id_hide_tbody_sis.attendance" table_name="sis.attendance">v</td>
+                <td class="small_tab_pref small_tab_pref_1" db="sis" db_url="sis" table_name="attendance" table_name_url="attendance">
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec_small.png" title="See table structure">
+                </td>
+                <td id="id_zag_sis.attendance" class="tab_zag text-nowrap tab_zag_noquery" table_name="sis.attendance" query_set="0">
+                    <span class="owner">sis</span>
+                    attendance
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_sis.attendance">
+                                                                                                                                                                                <tr id="id_tr_attendance.student_name" class="tab_field_3" click_field_param="attendance,student_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.attendance.student_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            student_name : varchar(30)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_attendance.student_id" class="tab_field" click_field_param="attendance,student_id,1,sis">
+                                        <td width="10px" colspan="3" id="sis.attendance.student_id">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/FieldKey_small.png" alt="*">
+                            student_id : varchar(12)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_attendance.current_time" class="tab_field" click_field_param="attendance,current_time,0,sis">
+                                        <td width="10px" colspan="3" id="sis.attendance.current_time">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_date.png" alt="*">
+                            current_time : datetime
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_attendance.26/2/2023" class="tab_field" click_field_param="attendance,26%2F2%2F2023,0,sis">
+                                        <td width="10px" colspan="3" id="sis.attendance.26%2F2%2F2023">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            26/2/2023 : varchar(1)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_attendance.27/2/2023" class="tab_field" click_field_param="attendance,27%2F2%2F2023,0,sis">
+                                        <td width="10px" colspan="3" id="sis.attendance.27%2F2%2F2023">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            27/2/2023 : char(1)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_attendance.28/2/2023" class="tab_field" click_field_param="attendance,28%2F2%2F2023,0,sis">
+                                        <td width="10px" colspan="3" id="sis.attendance.28%2F2%2F2023">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            28/2/2023 : char(1)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+                            <input name="t_x[sis.std_details]" type="hidden" id="t_x_sis.std_details_">
+    <input name="t_y[sis.std_details]" type="hidden" id="t_y_sis.std_details_">
+    <input name="t_v[sis.std_details]" type="hidden" id="t_v_sis.std_details_">
+    <input name="t_h[sis.std_details]" type="hidden" id="t_h_sis.std_details_">
+    <table id="sis.std_details" db_url="sis" table_name_url="std_details" cellpadding="0" cellspacing="0" class="table table-sm table-striped table-hover w-auto designer_tab" style="position: absolute; left: 771px; top: 216px; display: block; z-index: 1;" data-left="771" data-top="216"> <!--"-->
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Show/hide columns" id="id_hide_tbody_sis.std_details" table_name="sis.std_details">v</td>
+                <td class="small_tab_pref small_tab_pref_1" db="sis" db_url="sis" table_name="std_details" table_name_url="std_details">
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec_small.png" title="See table structure">
+                </td>
+                <td id="id_zag_sis.std_details" class="tab_zag" table_name="sis.std_details" query_set="0">
+                    <span class="owner">sis</span>
+                    std_details
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_sis.std_details">
+                                                                                                                                                                                <tr id="id_tr_std_details.std_id" class="tab_field_3" click_field_param="std_details,std_id,1,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_id">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/FieldKey_small.png" alt="*">
+                            std_id : varchar(15)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_name" class="tab_field" click_field_param="std_details,std_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_name : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_f_name" class="tab_field" click_field_param="std_details,std_f_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_f_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_f_name : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_m_name" class="tab_field" click_field_param="std_details,std_m_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_m_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_m_name : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_year" class="tab_field" click_field_param="std_details,std_year,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_year">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_int.png" alt="*">
+                            std_year : int(1)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_sem" class="tab_field" click_field_param="std_details,std_sem,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_sem">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_int.png" alt="*">
+                            std_sem : int(1)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_branch" class="tab_field" click_field_param="std_details,std_branch,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_branch">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_branch : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_mobile_no" class="tab_field" click_field_param="std_details,std_mobile_no,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_mobile_no">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_int.png" alt="*">
+                            std_mobile_no : bigint(12)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_father_mobile_no" class="tab_field" click_field_param="std_details,std_father_mobile_no,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_father_mobile_no">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_int.png" alt="*">
+                            std_father_mobile_no : bigint(12)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_college_name" class="tab_field" click_field_param="std_details,std_college_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_college_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_college_name : varchar(50)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_std_details.std_admission_year" class="tab_field" click_field_param="std_details,std_admission_year,0,sis">
+                                        <td width="10px" colspan="3" id="sis.std_details.std_admission_year">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_date.png" alt="*">
+                            std_admission_year : year(4)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+                            <input name="t_x[sis.student]" type="hidden" id="t_x_sis.student_">
+    <input name="t_y[sis.student]" type="hidden" id="t_y_sis.student_">
+    <input name="t_v[sis.student]" type="hidden" id="t_v_sis.student_">
+    <input name="t_h[sis.student]" type="hidden" id="t_h_sis.student_">
+    <table id="sis.student" db_url="sis" table_name_url="student" cellpadding="0" cellspacing="0" class="table table-sm table-striped table-hover w-auto designer_tab" style="position: absolute; left: 116px; top: 114px; display: block; z-index: 1;"> <!--"-->
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Show/hide columns" id="id_hide_tbody_sis.student" table_name="sis.student">v</td>
+                <td class="small_tab_pref small_tab_pref_1" db="sis" db_url="sis" table_name="student" table_name_url="student">
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec_small.png" title="See table structure">
+                </td>
+                <td id="id_zag_sis.student" class="tab_zag text-nowrap tab_zag_noquery" table_name="sis.student" query_set="0">
+                    <span class="owner">sis</span>
+                    student
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_sis.student">
+                                                                                                                                                                                <tr id="id_tr_student.std_id" class="tab_field_3" click_field_param="student,std_id,1,sis">
+                                        <td width="10px" colspan="3" id="sis.student.std_id">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/FieldKey_small.png" alt="*">
+                            std_id : varchar(12)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_student.std_name" class="tab_field" click_field_param="student,std_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.student.std_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_name : varchar(30)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_student.std_password" class="tab_field" click_field_param="student,std_password,0,sis">
+                                        <td width="10px" colspan="3" id="sis.student.std_password">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_password : text
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_student.std_email" class="tab_field" click_field_param="student,std_email,0,sis">
+                                        <td width="10px" colspan="3" id="sis.student.std_email">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            std_email : varchar(25)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_student.time_of_joining" class="tab_field" click_field_param="student,time_of_joining,0,sis">
+                                        <td width="10px" colspan="3" id="sis.student.time_of_joining">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_date.png" alt="*">
+                            time_of_joining : datetime
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+                            <input name="t_x[sis.teacher]" type="hidden" id="t_x_sis.teacher_">
+    <input name="t_y[sis.teacher]" type="hidden" id="t_y_sis.teacher_">
+    <input name="t_v[sis.teacher]" type="hidden" id="t_v_sis.teacher_">
+    <input name="t_h[sis.teacher]" type="hidden" id="t_h_sis.teacher_">
+    <table id="sis.teacher" db_url="sis" table_name_url="teacher" cellpadding="0" cellspacing="0" class="table table-sm table-striped table-hover w-auto designer_tab" style="position: absolute; left: 105px; top: 404px; display: block; z-index: 1;" data-left="105" data-top="404"> <!--"-->
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Show/hide columns" id="id_hide_tbody_sis.teacher" table_name="sis.teacher">v</td>
+                <td class="small_tab_pref small_tab_pref_1" db="sis" db_url="sis" table_name="teacher" table_name_url="teacher">
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec_small.png" title="See table structure">
+                </td>
+                <td id="id_zag_sis.teacher" class="tab_zag" table_name="sis.teacher" query_set="0">
+                    <span class="owner">sis</span>
+                    teacher
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_sis.teacher">
+                                                                                                                                                                                <tr id="id_tr_teacher.t_name" class="tab_field_3" click_field_param="teacher,t_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher.t_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_name : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher.t_id" class="tab_field" click_field_param="teacher,t_id,1,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher.t_id">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/FieldKey_small.png" alt="*">
+                            t_id : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher.t_password" class="tab_field" click_field_param="teacher,t_password,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher.t_password">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_password : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher.t_email" class="tab_field" click_field_param="teacher,t_email,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher.t_email">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_email : varchar(30)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher.time_of_joining" class="tab_field" click_field_param="teacher,time_of_joining,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher.time_of_joining">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_date.png" alt="*">
+                            time_of_joining : timestamp
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+                            <input name="t_x[sis.teacher_details]" type="hidden" id="t_x_sis.teacher_details_">
+    <input name="t_y[sis.teacher_details]" type="hidden" id="t_y_sis.teacher_details_">
+    <input name="t_v[sis.teacher_details]" type="hidden" id="t_v_sis.teacher_details_">
+    <input name="t_h[sis.teacher_details]" type="hidden" id="t_h_sis.teacher_details_">
+    <table id="sis.teacher_details" db_url="sis" table_name_url="teacher_details" cellpadding="0" cellspacing="0" class="table table-sm table-striped table-hover w-auto designer_tab" style="position: absolute; left: 356px; top: 30px; display: block; z-index: 1;"> <!--"-->
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Show/hide columns" id="id_hide_tbody_sis.teacher_details" table_name="sis.teacher_details">v</td>
+                <td class="small_tab_pref small_tab_pref_1" db="sis" db_url="sis" table_name="teacher_details" table_name_url="teacher_details">
+                    <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/exec_small.png" title="See table structure">
+                </td>
+                <td id="id_zag_sis.teacher_details" class="tab_zag" table_name="sis.teacher_details" query_set="0">
+                    <span class="owner">sis</span>
+                    teacher_details
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_sis.teacher_details">
+                                                                                                                                                                                <tr id="id_tr_teacher_details.t_id" class="tab_field_3" click_field_param="teacher_details,t_id,1,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_id">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/FieldKey_small.png" alt="*">
+                            t_id : varchar(12)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_name" class="tab_field" click_field_param="teacher_details,t_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_name : varchar(30)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_father_name" class="tab_field" click_field_param="teacher_details,t_father_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_father_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_father_name : varchar(30)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_mobile" class="tab_field" click_field_param="teacher_details,t_mobile,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_mobile">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_int.png" alt="*">
+                            t_mobile : bigint(12)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_email" class="tab_field" click_field_param="teacher_details,t_email,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_email">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_email : varchar(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_dept" class="tab_field" click_field_param="teacher_details,t_dept,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_dept">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_dept : varchar(30)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_salary" class="tab_field" click_field_param="teacher_details,t_salary,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_salary">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_int.png" alt="*">
+                            t_salary : bigint(20)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_qualification" class="tab_field" click_field_param="teacher_details,t_qualification,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_qualification">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_qualification : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_college_name" class="tab_field" click_field_param="teacher_details,t_college_name,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_college_name">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_college_name : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_date_of_joining" class="tab_field" click_field_param="teacher_details,t_date_of_joining,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_date_of_joining">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_date.png" alt="*">
+                            t_date_of_joining : date
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                                    <tr id="id_tr_teacher_details.t_image" class="tab_field" click_field_param="teacher_details,t_image,0,sis">
+                                        <td width="10px" colspan="3" id="sis.teacher_details.t_image">
+                        <div class="text-nowrap">
+                                                        <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/Field_small_char.png" alt="*">
+                            t_image : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+    </form>
+</div>
+<div id="designer_hint"></div>
+<table id="layer_new_relation" class="table table-borderless w-auto hide">
+    <tbody>
+        <tr>
+            <td class="frams1" width="10px">
+            </td>
+            <td class="frams5" width="99%">
+            </td>
+            <td class="frams2" width="10px">
+                <div class="bor">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="frams8">
+            </td>
+            <td class="input_tab p-0">
+                <table class="table table-borderless bg-white mb-0 text-center">
+                    <thead>
+                        <tr>
+                            <td colspan="2" class="text-center text-nowrap">
+                                <strong>
+                                    Create relationship                                </strong>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody id="foreign_relation">
+                        <tr>
+                            <td colspan="2" class="text-center text-nowrap">
+                                <strong>
+                                    FOREIGN KEY
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="58" class="text-nowrap">
+                                on delete
+                            </td>
+                            <td width="102">
+                                <select name="on_delete" id="on_delete">
+                                    <option value="nix" selected="selected">
+                                        --
+                                    </option>
+                                    <option value="CASCADE">
+                                        CASCADE
+                                    </option>
+                                    <option value="SET NULL">
+                                        SET NULL
+                                    </option>
+                                    <option value="NO ACTION">
+                                        NO ACTION
+                                    </option>
+                                    <option value="RESTRICT">
+                                        RESTRICT
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-nowrap">
+                                on update
+                            </td>
+                            <td>
+                                <select name="on_update" id="on_update">
+                                    <option value="nix" selected="selected">
+                                        --
+                                    </option>
+                                    <option value="CASCADE">
+                                        CASCADE
+                                    </option>
+                                    <option value="SET NULL">
+                                        SET NULL
+                                    </option>
+                                    <option value="NO ACTION">
+                                        NO ACTION
+                                    </option>
+                                    <option value="RESTRICT">
+                                        RESTRICT
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="text-center text-nowrap">
+                                <input type="button" id="ok_new_rel_panel" class="btn btn-secondary butt" name="Button" value="OK">
+                                <input type="button" id="cancel_new_rel_panel" class="btn btn-secondary butt" name="Button" value="Cancel">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class="frams6">
+            </td>
+        </tr>
+        <tr>
+            <td class="frams4">
+                <div class="bor">
+                </div>
+            </td>
+            <td class="frams7">
+            </td>
+            <td class="frams3">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table id="layer_upd_relation" class="table table-borderless w-auto hide">
+    <tbody>
+        <tr>
+            <td class="frams1" width="10px">
+            </td>
+            <td class="frams5" width="99%">
+            </td>
+            <td class="frams2" width="10px">
+                <div class="bor">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="frams8">
+            </td>
+            <td class="input_tab p-0">
+                <table class="table table-borderless bg-white mb-0 text-center">
+                    <tbody><tr>
+                        <td colspan="3" class="text-center text-nowrap">
+                            <strong>
+                                Delete relationship                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-center text-nowrap">
+                            <input id="del_button" name="Button" type="button" class="btn btn-secondary butt" value="Delete">
+                            <input id="cancel_button" type="button" class="btn btn-secondary butt" name="Button" value="Cancel">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+            <td class="frams6">
+            </td>
+        </tr>
+        <tr>
+            <td class="frams4">
+                <div class="bor">
+                </div>
+            </td>
+            <td class="frams7">
+            </td>
+            <td class="frams3">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div id="PMA_disable_floating_menubar"></div>
+<div class="modal fade" id="designerGoModal" tabindex="-1" aria-labelledby="designerGoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="designerGoModalLabel">Loading</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel"></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="designerModalGoButton">Go</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="designerPromptModal" tabindex="-1" aria-labelledby="designerPromptModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="designerPromptModalLabel">Loading</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel"></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="designerModalYesButton">Yes</button>
+        <button type="button" class="btn btn-secondary" id="designerModalNoButton">No</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="PMA_disable_floating_menubar"></div></div>
+
+
+
+      <div id="selflink" class="d-print-none" style="display: none;">
+      <a href="http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fdesigner&amp;db=sis&amp;server=1" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer">
+                  <img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new">
+              </a>
+    </div>
+  
+  
+
+  
+
+
+
+  
+  
+  
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="pma_navigation_settings" aria-labelledby="ui-id-30" style="position: fixed; height: auto; width: 700px; top: 26.0237px; left: 444.512px;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-30" class="ui-dialog-title">Page-related settings</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="pma_navigation_settings" class="ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 138.81px; max-height: 521.871px; height: auto;"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fdesigner&amp;db=sis&amp;server=1" class="config-form disableAjax">
+  <input type="hidden" name="tab_hash" value="">
+      <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="1">
+    <input type="hidden" name="token" value="5e465d305d6a2e372c7e6326755b2c48">
+  <input type="hidden" name="submit_save" value="Navi">
+
+  <ul class="nav nav-tabs" id="configFormDisplayTab" role="tablist">
+          <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="Navi_panel-tab" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#Navi_panel" data-bs-toggle="tab" role="tab" aria-controls="Navi_panel" aria-selected="true">Navigation panel</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_tree-tab" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#Navi_tree" data-bs-toggle="tab" role="tab" aria-controls="Navi_tree" aria-selected="false">Navigation tree</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_servers-tab" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#Navi_servers" data-bs-toggle="tab" role="tab" aria-controls="Navi_servers" aria-selected="false">Servers</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_databases-tab" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#Navi_databases" data-bs-toggle="tab" role="tab" aria-controls="Navi_databases" aria-selected="false">Databases</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_tables-tab" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#Navi_tables" data-bs-toggle="tab" role="tab" aria-controls="Navi_tables" aria-selected="false">Tables</a>
+      </li>
+      </ul>
+  <div class="tab-content">
+          <div class="tab-pane fade show active" id="Navi_panel" role="tabpanel" aria-labelledby="Navi_panel-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">Navigation panel</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Customize appearance of the navigation panel.</h6>
+            
+            <fieldset class="optbox">
+              <legend>Navigation panel</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="ShowDatabasesNavigationAsTree">Show databases navigation as tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>In the navigation panel, replaces the database tree with a selector</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#ShowDatabasesNavigationAsTree" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationLinkWithMainPanel">Link with main panel</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Link with main panel by highlighting the current database or table.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationLinkWithMainPanel" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationDisplayLogo">Display logo</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Show logo in navigation panel.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationDisplayLogo" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationLogoLink">Logo link URL</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>URL where logo in the navigation panel will point to.</small>
+      </th>
+
+  <td>
+          <input type="text" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php" class="w-75">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationLogoLink" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationLogoLinkWindow">Logo link target</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Open the linked page in the main window (<code>main</code>) or in a new one (<code>new</code>).</small>
+      </th>
+
+  <td>
+          <select name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow" class="w-75">
+                            <option value="main" selected="">main</option>
+                            <option value="new">new</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationLogoLinkWindow" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreePointerEnable">Enable highlighting</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Highlight server under the mouse cursor.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreePointerEnable" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="FirstLevelNavigationItems">Maximum items on first level</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>The number of items that can be displayed on each page on the first level of the navigation tree.</small>
+      </th>
+
+  <td>
+          <input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#FirstLevelNavigationItems" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeDisplayItemFilterMinimum">Minimum number of items to display the filter box</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Defines the minimum number of items (tables, views, routines and events) to display a filter box.</small>
+      </th>
+
+  <td>
+          <input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeDisplayItemFilterMinimum" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NumRecentTables">Recently used tables</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Maximum number of recently used tables; set 0 to disable.</small>
+      </th>
+
+  <td>
+          <input type="number" name="NumRecentTables" id="NumRecentTables" value="10" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NumRecentTables" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NumFavoriteTables">Favorite tables</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Maximum number of favorite tables; set 0 to disable.</small>
+      </th>
+
+  <td>
+          <input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NumFavoriteTables" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationWidth">Navigation panel width</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationWidth" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Set to 0 to collapse navigation panel.</small>
+      </th>
+
+  <td>
+          <input type="number" name="NavigationWidth" id="NavigationWidth" value="240" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationWidth" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_tree" role="tabpanel" aria-labelledby="Navi_tree-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">Navigation tree</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Customize the navigation tree.</h6>
+            
+            <fieldset class="optbox">
+              <legend>Navigation tree</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="MaxNavigationItems">Maximum items in branch</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>The number of items that can be displayed on each page of the navigation tree.</small>
+      </th>
+
+  <td>
+          <input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#MaxNavigationItems" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeEnableGrouping">Group items in the tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Group items in the navigation tree (determined by the separator defined in the Databases and Tables tabs above).</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeEnableGrouping" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeEnableExpansion">Enable navigation tree expansion</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to offer the possibility of tree expansion in the navigation panel.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeEnableExpansion" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowTables">Show tables in tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to show tables under database in the navigation tree</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeShowTables" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowViews">Show views in tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to show views under database in the navigation tree</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeShowViews" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowFunctions">Show functions in tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to show functions under database in the navigation tree</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeShowFunctions" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowProcedures">Show procedures in tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to show procedures under database in the navigation tree</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeShowProcedures" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowEvents">Show events in tree</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to show events under database in the navigation tree</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeShowEvents" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeAutoexpandSingleDb">Expand single database</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeAutoexpandSingleDb" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Whether to expand single database in the navigation tree automatically.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeAutoexpandSingleDb" id="NavigationTreeAutoexpandSingleDb" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeAutoexpandSingleDb" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_servers" role="tabpanel" aria-labelledby="Navi_servers-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">Servers</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Servers display options.</h6>
+            
+            <fieldset class="optbox">
+              <legend>Servers</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="NavigationDisplayServers">Display servers selection</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Display server choice at the top of the navigation panel.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationDisplayServers" id="NavigationDisplayServers" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationDisplayServers" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="DisplayServersList">Display servers as a list</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_DisplayServersList" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>Show server listing as a list instead of a drop down.</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="DisplayServersList" id="DisplayServersList">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#DisplayServersList" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_databases" role="tabpanel" aria-labelledby="Navi_databases-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">Databases</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Databases display options.</h6>
+            
+            <fieldset class="optbox">
+              <legend>Databases</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="NavigationTreeDisplayDbFilterMinimum">Minimum number of databases to display the database filter box</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeDisplayDbFilterMinimum" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeDbSeparator">Database tree separator</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>String that separates databases into different tree levels.</small>
+      </th>
+
+  <td>
+                <input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeDbSeparator" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_tables" role="tabpanel" aria-labelledby="Navi_tables-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">Tables</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Tables display options.</h6>
+            
+            <fieldset class="optbox">
+              <legend>Tables</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="NavigationTreeDefaultTabTable">Target for quick access icon</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <select name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable" class="w-75">
+                            <option value="structure" selected="">Structure</option>
+                            <option value="sql">SQL</option>
+                            <option value="search">Search</option>
+                            <option value="insert">Insert</option>
+                            <option value="browse">Browse</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeDefaultTabTable" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeDefaultTabTable2">Target for second quick access icon</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <select name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2" class="w-75">
+                            <option value="" selected=""></option>
+                            <option value="structure">Structure</option>
+                            <option value="sql">SQL</option>
+                            <option value="search">Search</option>
+                            <option value="insert">Insert</option>
+                            <option value="browse">Browse</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeDefaultTabTable2" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeTableSeparator">Table tree separator</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>String that separates tables into different tree levels.</small>
+      </th>
+
+  <td>
+                <input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeTableSeparator" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeTableLevel">Maximum table tree depth</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=sis#NavigationTreeTableLevel" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ sis _ phpMyAdmin 5.2.0_files/dot.gif" title="Restore default value" alt="Restore default value" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+      </div>
+</form>
+
+<script type="text/javascript">
+  if (typeof configInlineParams === 'undefined' || !Array.isArray(configInlineParams)) {
+    configInlineParams = [];
+  }
+  configInlineParams.push(function () {
+    registerFieldValidator('FirstLevelNavigationItems', 'validatePositiveNumber', true);
+registerFieldValidator('NavigationTreeDisplayItemFilterMinimum', 'validatePositiveNumber', true);
+registerFieldValidator('NumRecentTables', 'validateNonNegativeNumber', true);
+registerFieldValidator('NumFavoriteTables', 'validateNonNegativeNumber', true);
+registerFieldValidator('NavigationWidth', 'validateNonNegativeNumber', true);
+registerFieldValidator('MaxNavigationItems', 'validatePositiveNumber', true);
+registerFieldValidator('NavigationTreeTableLevel', 'validatePositiveNumber', true);
+
+    $.extend(Messages, {
+      'error_nan_p': 'Not\u0020a\u0020positive\u0020number\u0021',
+      'error_nan_nneg': 'Not\u0020a\u0020non\u002Dnegative\u0020number\u0021',
+      'error_incorrect_port': 'Not\u0020a\u0020valid\u0020port\u0020number\u0021',
+      'error_invalid_value': 'Incorrect\u0020value\u0021',
+      'error_value_lte': 'Value\u0020must\u0020be\u0020less\u0020than\u0020or\u0020equal\u0020to\u0020\u0025s\u0021',
+    });
+
+    $.extend(defaultValues, {
+      'ShowDatabasesNavigationAsTree': true,
+      'NavigationLinkWithMainPanel': true,
+      'NavigationDisplayLogo': true,
+      'NavigationLogoLink': 'index.php',
+      'NavigationLogoLinkWindow': ['main'],
+      'NavigationTreePointerEnable': true,
+      'FirstLevelNavigationItems': '100',
+      'NavigationTreeDisplayItemFilterMinimum': '30',
+      'NumRecentTables': '10',
+      'NumFavoriteTables': '10',
+      'NavigationWidth': '240',
+      'MaxNavigationItems': '50',
+      'NavigationTreeEnableGrouping': true,
+      'NavigationTreeEnableExpansion': true,
+      'NavigationTreeShowTables': true,
+      'NavigationTreeShowViews': true,
+      'NavigationTreeShowFunctions': true,
+      'NavigationTreeShowProcedures': true,
+      'NavigationTreeShowEvents': true,
+      'NavigationTreeAutoexpandSingleDb': true,
+      'NavigationDisplayServers': true,
+      'DisplayServersList': false,
+      'NavigationTreeDisplayDbFilterMinimum': '30',
+      'NavigationTreeDbSeparator': '_',
+      'NavigationTreeDefaultTabTable': ['structure'],
+      'NavigationTreeDefaultTabTable2': [''],
+      'NavigationTreeTableSeparator': '__',
+      'NavigationTreeTableLevel': '1'
+    });
+  });
+  if (typeof configScriptLoaded !== 'undefined' && configInlineParams) {
+    loadInlineConfig();
+  }
+</script>
+</div></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button">Apply</button><button type="button">Cancel</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-widget-overlay ui-front" style="z-index: 800;"></div></body></html>

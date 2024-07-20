@@ -1,0 +1,1406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary_color_first: #ff0080;
+    --primary_color_second: #7430f9;
+}
+
+body {
+    background-color: #faf9f8;
+    overflow: auto;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/***************  Editing Alert **************** */
+.alert {
+    border: 2px solid #ffeeba;
+    padding: 10px;
+    background-color: #fff3cd;
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+}
+
+.alert span {
+    position: absolute;
+    right: 21px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid black;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 2px;
+    transform: translateY(-15%);
+    cursor: pointer;
+
+}
+
+/* Handling all the cases */
+.alert span:hover {
+    background-color: wheat;
+    background: whitesmoke;
+    border: none;
+}
+
+.Error {
+    background-color: rgba(254, 87, 87, 0.7);
+}
+
+.Error span:hover {
+    background-color: rgba(254, 87, 87, 1);
+}
+
+
+
+
+/* ***************  Editing the Navbar **************** */
+
+/* Targetting the navbar */
+#navbar {
+    display: flex;
+    background: linear-gradient(45deg, blue, #f7007c);
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    background: white;
+    border-bottom: 1px solid #d3c6c6;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+/* Logo  */
+.myLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant: petite-caps;
+    font-weight: bold;
+    font-variant: petite-caps;
+}
+
+.myLogo div b,
+.myLogo div div {
+    position: relative;
+    -webkit-text-stroke: 0.15vw white;
+}
+
+.myLogo div b::before,
+.myLogo div div::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    -webkit-text-stroke: 0vw transparent;
+    /* border-right: 2px solid #7730f9; */
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    25% {
+        width: 25%;
+        opacity: 0.25;
+    }
+
+    50% {
+        width: 50%;
+        opacity: 0.5;
+    }
+
+    75% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    85% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+#navbar div a {
+    cursor: pointer;
+    width: fit-content;
+}
+
+#navbar ul li {
+    text-decoration: none;
+    padding: 10px;
+    list-style: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    min-width: 100px;
+    background: var(--primary_color_first);
+    text-align: center;
+    border-radius: 4px;
+}
+
+#navbar ul li:hover {
+    background-color: var(--primary_color_second);
+}
+
+#navbar ul li a {
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    transition: 2s;
+    cursor: pointer;
+}
+
+/* Adding a hover effect for the headings */
+#navbar ul li a::after {
+    content: "";
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 0%;
+    transition: all 0.5s;
+    color: white;
+}
+
+#navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Beutify the btn */
+.btn {
+    min-width: fit-content;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #7430f9;
+    border: 2px solid white;
+    margin: 10px 0px;
+    border: 2px solid #7430f9;
+    margin: 6px;
+
+}
+
+#dashboard {
+    text-decoration: none;
+}
+
+.btn:hover,
+#dashboard:hover {
+    color: white;
+    background-color: var(--primary_color_first);
+    box-shadow: 0px 0px 4px 3px white;
+    border: 2px solid transparent;
+}
+
+#userNameEdit {
+    font-weight: bold;
+    margin: auto;
+    border: 2px solid var(--primary_color_first);
+    margin-right: 5px;
+    background: white;
+    color: var(--primary_color_first);
+    padding: 10px 10px;
+}
+
+/* Targetting alert section to be handle depends on use cases */
+
+#dismisible {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#dismisible :hover {
+    background-color: #7430f9;
+}
+
+/* ************* Targetting Second Secttion ************* 
+*/
+#main {
+    position: inherit;
+    height: 500px;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+#main h1 {
+    font-size: 2.5rem;
+    color: #7430f9;
+    padding: 20px;
+    text-shadow: 2px 5px 7px white;
+    font-family: emoji;
+    text-align: -webkit-center;
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+    text-align: center;
+}
+
+#main h1 span {
+    color: var(--primary_color_first);
+    font-size: 6rem;
+    font-family: monospace;
+    LINE-HEIGHT: 80PX;
+}
+
+#logo {
+    width: 8rem;
+    filter: drop-shadow(2px 4px 6px white);
+    transition: 2s all;
+}
+
+#logo:hover {
+    transform: scale(1.15);
+}
+
+#main::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../HTML/images/background.jpg') no-repeat center/cover;
+}
+
+.choice p {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #7730f9;
+    text-align: center;
+    text-shadow: 2px 5px 7px white;
+    LINE-HEIGHT: 45PX;
+}
+
+.choice p span {
+    color: #ff1189;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 90vh;
+    width: 35vw;
+    /* box-shadow: 0px 2px 8px 2px #0314fd; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choice div a {
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100px;
+}
+
+.btn-secondry {
+    width: 200px;
+    height: 35px;
+    font-size: 25px;
+    background: #f5f5f59c;
+    color: #7430f9;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding: 0px;
+
+}
+
+/* ***************** Targetting the footer section ******************/
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px;
+    /* position: absolute; */
+    width: 100%;
+    /* top: 100vh; */
+    /* bottom: 0px;
+    left: 0px; */
+}
+
+#std_dash_footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px;
+    position: absolute;
+    border: 0px;
+    width: 100%;
+}
+
+/* ********************************************** */
+/* ************* Targetting the login.php **************/
+
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid #7430f9;
+    width: auto;
+    min-width: 25%;
+    margin: auto;
+    padding-bottom: 10px;
+    background: white;
+    border: 2px solid #e1e1e1;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        5px 7px 15px 1px rgba(0, 0, 0, 0.15),
+        9px -3px 1px 3px rgba(255, 255, 255, 0.3);
+}
+
+#loginForm h1 {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(45deg, #6722ed, #ff1189);
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#loginForm form {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#loginForm input,
+#loginForm select {
+    padding: 5px;
+    border: 2px solid #7430f9;
+    border-style: double;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    font-weight: normal;
+    height: 35px;
+}
+
+#loginForm input[type='submit'] {
+    width: 40%;
+}
+
+#loginForm label {
+    font-weight: normal;
+}
+
+#loginForm form div {
+    text-align: left;
+    font-size: 16px;
+    min-height: 35px;
+    border-bottom: 2px solid #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    border-radius: 15px;
+}
+
+
+/* ************** Handling Student Dashboard.php As well as Teacher Dashboard***************/
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 10vh;
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+
+#std_dash_main {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130vh !important;
+    justify-content: space-evenly;
+    display: flex;
+    position: revert;
+    /* min-height: 108vh; */
+    padding: 30px;
+}
+
+#std_dash_main button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#std_dash_main button:hover {
+    background-color: white;
+    color: #7430f9;
+    box-shadow: 0px 0px 4px 0px whitesmoke;
+    border: 2px solid white;
+    text-shadow: 0px 0px 7px;
+}
+
+#allItems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.items {
+    height: 30vh;
+    width: 25vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5a30f9d1;
+    transition: all 1s;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 1px black;
+    padding: 10px;
+    margin: 30px;
+}
+
+
+.items h2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.items img {
+    flex-basis: 35%;
+    width: 35%;
+    filter: invert();
+}
+
+.items:hover {
+    transform: scale(1.1);
+    /* background-color: black */
+}
+
+#dashboard_Form {
+    display: flex;
+}
+
+/* ************** Handling studentOperations Folder  ************** */
+/* ************* Handling viewDetails Page ************* */
+#main_viewDetails {
+    /* border: 2px solid black; */
+    display: flex;
+    height: 97vh;
+    width: 100%;
+}
+
+.items_viewDetails {
+    display: flex;
+}
+
+#left_viewDetails {
+    width: 17%;
+    background-color: #f1f3f4;
+    overflow-y: auto;
+    border: 1px solid #e2e3e8;
+    position: inherit;
+}
+
+.items_viewDetails button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #7430f9;
+    border-radius: 0px 0px 15px 0px;
+    background: var(--primary_color_first);
+    border: none;
+    transition: all 0.5s;
+}
+
+#left_viewDetails button h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left_viewDetails button h2 img {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 25px;
+
+}
+
+.items_viewDetails button h2 {
+    color: white;
+}
+
+.items_viewDetails button:hover {
+    background-color: #7730f9;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+
+#right_viewDetails {
+    width: 85%;
+    overflow-y: auto;
+    margin: 0px auto;
+    position: inherit;
+    margin: 2px auto;
+
+}
+
+#right_viewDetails::before {
+    content: "";
+    position: fixed;
+    left: 48%;
+    height: 30%;
+    width: 20%;
+    z-index: -1;
+    top: 38%;
+    opacity: .5;
+    background: url(../images/SIS.gif) no-repeat center/cover;
+}
+
+#right_viewDetails h1 {
+    text-align: center;
+    color: var(--primary_color_first);
+    /* border-radius: 6px; */
+    width: 50%;
+    background-color: white;
+    margin: 10px auto;
+}
+
+#right_viewDetails table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#headingTr {
+    background-color: #a7a7a7 !important;
+    box-shadow: none;
+}
+
+#headingTr th {
+    padding: 20px;
+}
+
+#right_viewDetails table tr,
+th,
+#right_viewDetails table tr td,
+#right_viewDetails table tr td input {
+    /* border: 2px solid black;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background: #fff9f9b8; */
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    /* background: #fff9f9b8; */
+    /* border-bottom: 1px solid black; */
+    color: black;
+}
+
+/* #right_viewDetails table tr td:nth-child(2n+0){
+    background-color: #e9ecf8;
+}
+#right_viewDetails table tr td:nth-child(2n+1){
+    background-color: #f8e9f3;
+} */
+
+
+#right_viewDetails th {
+    color: #e83d93;
+    background-color: #e1e1e191;
+    font-size: 18px;
+    min-width: 80px;
+}
+
+/* ************ Admin Operations Folder Handling *************/
+/* Student Related handling */
+#top {
+    display: flex;
+    width: 100%;
+}
+
+#top fieldset {
+    width: 100%;
+}
+
+#top fieldset form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+#bottom_form {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom h2 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    color: #ff0080;
+    ;
+    text-decoration: underline;
+
+}
+
+.btn2 {
+    padding: 10px;
+    margin: 5px 10px;
+    color: #ff57ab;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 11px;
+    border: none !important;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: diagonal-fractions;
+    border: 2px solid white !important;
+    box-shadow: 2px 2px 4px 2px #ababab;
+    transition: all 0.5s;
+}
+
+.btn2:hover {
+    color: var(--primary_color_first);
+    background-color: white;
+    border-color: var(--primary_color_first);
+    box-shadow: 1px 1px 5px 2px #f7007a;
+
+}
+
+#bottom {
+    margin: 20px;
+}
+
+#bottomFieldset {
+    width: 50%;
+    border: 2px solid var(--primary_color_first);
+    display: block;
+    margin: auto;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+/* #bottomFieldset table th {
+    color: var(--primary_color_first);
+} */
+
+#bottomFieldset legend h2 {
+    background-color: #ff7ebf;
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+}
+
+
+
+#loginForm fieldset {
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    box-shadow: 2px 5px 10px 0px var(--primary_color_first);
+    width: 25vw;
+    padding: 30px;
+
+}
+
+#loginForm fieldset legend {
+    color: #ff57ab;
+    font-size: 16px;
+    color: blueviolet;
+    border: 2px solid black;
+    border-radius: 10px 0px 10px 0px;
+    padding: 3px;
+    border-color: #ff57ab;
+    box-shadow: 2px 2px 6px 2px var(--primary_color_first);
+}
+
+#loginForm fieldset legend h3 {
+    color: var(--primary_color_first);
+}
+
+/* #loginForm [type='submit'] {
+    background-color: white;
+    color: var(--primary_color_first);
+    transition: all 1s;
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+#loginForm [type='submit']:hover {
+    background-color: var(--primary_color_first);
+    color: white;
+    display: block;
+} */
+
+#searchEnroll {
+    border-color: #f7007c !important;
+}
+
+#searchStd {
+    border-color: #f7007c !important;
+    color: black !important;
+}
+
+#searchStd:hover {
+    color: white;
+    background-color: #ff57ab;
+}
+
+#tableForAdd input,
+textarea,
+select,
+option {
+    border: 2px solid black;
+    transition: color 2s;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    background: whitesmoke;
+
+}
+
+#tableForAdd input:focus {
+    border: 2px solid var(--primary_color_first);
+    border-color: var(--primary_color_first);
+}
+
+#chooseFile {
+    display: block;
+    margin: 10px auto !important;
+    width: 50% !important;
+}
+
+/* ************** Handling Notice Section ************** */
+.items2 {
+    color: #7430f9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    height: 200px;
+    min-width: 30%;
+    max-width: 30%;
+    flex-wrap: wrap;
+    /* max-height: 50vh; */
+    min-height: 37vh;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 1px;
+    justify-content: space-around;
+    height: auto;
+    overflow: hidden;
+}
+
+.noticesItems {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffffdb;
+    border: 2px solid black;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px 19px;
+    box-shadow: 1px 1px 5px 0px;
+}
+
+
+/* **************** Help Desk Starts ****************/
+
+/* .items3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    min-height: 40vh;
+    flex-wrap: wrap;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 1px;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+} */
+
+#help_desk {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid black;
+    width: 50%;
+    margin: 32px auto;
+    border-color: #f7009c;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(239 239 239);
+}
+
+#help_desk form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#help_desk div {
+    padding: 5px;
+    font-weight: bold;
+    color: #f7009c;
+}
+
+#help_desk select {
+    text-align: center !important;
+    display: flex !important;
+    text-align: start !important;
+    padding: 0px;
+    font-weight: normal;
+    height: 30px !important;
+}
+
+
+#help_desk label,
+#help_desk input {
+    width: 100%;
+}
+
+#help_desk button {
+    width: 50%;
+}
+
+/* .items2 input {
+    text-align: center;
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bold;
+    background: #e1e1e1;
+}
+
+.items2 textarea {
+    background: white;
+    color: #e83d93;
+} */
+
+/* *********** Utility Classes ************/
+.d-flex {
+    display: flex;
+}
+
+.background {
+    background: url('https://blog.madeeasy.in/wp-content/uploads/2021/11/education-is-the-most-powerful-weapon-800x445.jpg') center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+.d-block {
+    display: block;
+    margin: auto;
+}
+
+.btn3 {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    border-radius: inherit;
+    border: 2px solid black;
+    color: #ff0080;
+    width: 15%;
+}
+
+.success {
+    background-color: #f7007ca6
+}
+
+.loginSignButton {
+    text-align: center;
+    border: 2px solid #7430f9;
+    color: #ff0080;
+    padding: 10px;
+    font-weight: bold !important;
+    width: 50%;
+    margin: 10px auto;
+    transition: all 1s;
+    font-size: 16px;
+    border-color: #e1e1e1;
+    background: white;
+}
+
+.loginSignButton:hover {
+    background: #ff0080;
+    transition: all 1s;
+    color: black;
+    border: 2px solid transparent;
+}
+
+.d-flex-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enrollId {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQOFdNCOb4Q98heSkiTNVwhPrSjS1gSiIxY5b7OTgIqwMPV385IuDveJ_3YNeRE2ysQUs&usqp=CAU');
+    position: left;
+    background-size: 32px;
+    background-repeat: NO-REPEAT;
+    FILTER: contrast;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 43px;
+    padding-left: 35px !important;
+    text-align: start !important;
+}
+
+#password {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf2tfq9RGsYxH1d_XmyO9-ZtRjFQ-gbZDirLhqwbGv8lz5ooXizfxc29YiAqwP3qDuaVw&usqp=CAU');
+    position: left;
+    background-size: 32px;
+    background-repeat: NO-REPEAT;
+    FILTER: contrast;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 43px;
+    padding-left: 32px !important;
+    text-align: start !important;
+}
+
+#cPassword {
+    background-image: url('https://static.thenounproject.com/png/250130-200.png');
+    position: left;
+    background-size: 30px;
+    background-repeat: NO-REPEAT;
+    FILTER: contrast;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 43px;
+    padding-left: 32px !important;
+    text-align: start !important;
+}
+
+#email {
+    background-image: url('https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg');
+    position: left;
+    background-size: 30px;
+    background-repeat: NO-REPEAT;
+    FILTER: contrast;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 43px;
+    padding-left: 32px !important;
+    text-align: start !important;
+}
+
+#userName {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZj7Bw_2d3u3gfWIrySXIloU1J1LsU9sdt6WUuWT-XZFxMBbqhibD2bM3zhMXc639XhQ&usqp=CAU');
+    position: left;
+    background-size: 30px;
+    background-repeat: NO-REPEAT;
+    FILTER: contrast;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 43px;
+    padding-left: 32px !important;
+    text-align: start !important;
+}
+
+
+
+/* ************** Services Section Started **************  */
+
+#mainForServices {
+    display: flex;
+    justify-content: center;
+}
+
+.services>h1 {
+    font-size: 2.5rem;
+    color: #ff0080;
+    padding: 20px;
+    text-align: -webkit-center;
+}
+
+.serviceItems {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ff0080;
+    padding: 20px;
+}
+
+.serviceLeft h1 {
+    font-size: 1.7rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.serviceLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    min-width: 20%;
+    max-width: 40%;
+}
+
+.serviceLeft h1 {
+    font-size: 1.5rem;
+    color: #ff0080;
+    padding: 18px;
+    text-align: center;
+}
+
+.serviceLeft p {
+    font-size: 1rem;
+    color: #7430f9;
+    text-align: center;
+    font-weight: bold;
+}
+
+.serviceRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: revert;
+}
+
+.serviceRight img {
+    height: 300px;
+}
+
+
+/* Designing Contact Us Page */
+#content {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#mainForContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: 3px solid #7430f9;
+    border-radius: 10px;
+}
+
+#leftContact {
+    flex-basis: 60%;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#leftContact>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#leftContact>div>h1 {
+    padding: 15px 20px;
+    color: #7430f9;
+    font-size: 1.5rem;
+}
+
+#emailLogo {
+    display: inline-block;
+    filter: hue-rotate(45deg);
+}
+
+#emailLogo img {
+    width: 40px;
+
+}
+
+#contactForm form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    width: 100%;
+}
+
+#contactForm form span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contactForm form>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contactMessage {
+    display: flex;
+    text-align: start;
+}
+
+#contactMessageDiv div {
+    width: 10%;
+    text-align: center;
+    color: #ff0080;
+}
+
+#contactMessageDiv textarea {
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 5px -1px;
+    outline: none;
+    box-shadow: 0px 0px 10px -8px black;
+    padding: 10px;
+    font-weight: normal;
+}
+
+
+#contactForm input {
+    border: none;
+    padding: 7px 0px;
+    background: white;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 5px -1px;
+    outline: none;
+    box-shadow: 0px 0px 10px -8px black;
+    padding: 10px;
+    font-weight: normal;
+    width: 90%;
+}
+
+#contactForm span>div {
+    font-size: 15px;
+    color: #ff0080;
+    width: 90%;
+}
+
+.sendContactForm {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #ff0080;
+    background: white;
+    outline: none;
+    border: 2px solid;
+    border-radius: 4px;
+    transition: background 1s;
+    margin: 15px;
+}
+
+.sendContactForm:hover {
+    background: #ff0080;
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+#rightContact {
+    flex-basis: 40%;
+}
+
+#rightContact .icon img {
+    width: 50px;
+    padding: 10px;
+    filter: invert();
+}
+
+#rightContact {
+    padding: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background: #7430f9;
+    justify-content: space-around;
+}
+
+.iconItems {
+    display: flex;
+    align-items: start;
+    text-align: justify;
+    justify-content: start;
+    margin: 10px 0px;
+    padding: 3px 10px;
+}
+
+.iconsSocialMedia .icons img {
+    position: relative;
+    transition: all 1s;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.iconsSocialMedia .icons img:hover {
+    transform: translateY(-10px);
+    background: #24ff52;
+}
+
+
+
+/* ****************** Some Other CSS  ****************** */
+#bottomFieldset form table  tr:nth-child(even) {
+    background-color: #490fff45;
+}
+#bottomFieldset form table  tr:nth-child(odd){
+    background-color:  #ff00802b;
+}
+#right_viewDetails tbody tr:nth-child(even),
+tbody tr:nth-child(even) {
+    background-color: #490fff45;
+}
+
+#right_viewDetails tbody tr:nth-child(odd),
+tbody tr:nth-child(odd) {
+    background-color: #ff00802b;
+}
+
+table tbody tr:hover  {
+    background-color: #f1f3f4 !important;
+    /* box-shadow: 0px 1px 6px black; */
+}
+
+table tbody thead th:hover, table thead tr:hover {
+    background-color: inherit !important;
+    box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#f7009c, #7430f9);
+    border-radius: 10px;
+    height: 20px;
+}
+
+#right_viewDetails::-webkit-scrollbar {
+    width: 15px;
+}
+
+#right_viewDetails::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#right_viewDetails::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0015ff, #ff00bb);
+    border-radius: 10px;
+    height: 20px;
+    border: 2px solid black;
+}
